@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/IVENTEYE/pizza-app/static/css/main.b92a30b7.css",
+    "main.js": "/IVENTEYE/pizza-app/static/js/main.149c7943.js",
+    "index.html": "/IVENTEYE/pizza-app/index.html",
+    "static/media/close.svg": "/IVENTEYE/pizza-app/static/media/close.1623e04fe484a007313b.svg",
+    "static/media/search.svg": "/IVENTEYE/pizza-app/static/media/search.a933edd9ab0c66644637.svg",
+    "main.b92a30b7.css.map": "/IVENTEYE/pizza-app/static/css/main.b92a30b7.css.map",
+    "main.149c7943.js.map": "/IVENTEYE/pizza-app/static/js/main.149c7943.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b92a30b7.css",
+    "static/js/main.149c7943.js"
+  ]
+}
