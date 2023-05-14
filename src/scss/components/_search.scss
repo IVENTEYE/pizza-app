@@ -1,0 +1,108 @@
+.search {
+    margin-right: auto;
+    width: 25%;
+    position: relative;
+    &__items {
+        display: flex;
+    }
+    &__body {
+        position: relative;
+    }
+    &__icon {
+        width: 20px;
+        height: 20px;
+        background-image: url('../../../public/img/search.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin: 0 20px 0 auto;
+        transform: rotate(90deg);
+        @media (min-width: 520px) {
+            display: none;
+        }
+        @media (max-width: 375px) {
+            margin-right: 12px;
+        }
+    }
+    &__close {
+        display: none;
+    }
+    @media (max-width: 599.99px) {
+        width: 39%;
+    }
+    @media (max-width: 519.99px) {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+        height: 100%;
+        width: 100%;
+        background-color: #fff;
+        z-index: 4;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.2s ease-in-out;
+        &.active {
+            opacity: 1; 
+            visibility: visible;
+        }
+        &__items {
+            display: flex;
+            align-items: center;
+            margin: 0 10px;
+            transform: translateY(50%);
+        }
+        &__body {
+            flex: 1;
+            margin-right: 10px;
+        }
+        &__close {
+            display: block;
+            background-image: url('../../../public/img/close.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 30px;
+            height: 30px;
+            border: none;
+            background-color: transparent;
+        }
+    }
+    @media (max-width: 424.99px) {
+        &__items {
+            transform: translateY(45%);
+        }
+    }
+}
+
+.input {
+    background-color: #F3F3F3;
+    border: none;
+    width: 100%;
+    border-radius: 20px;
+    padding: 10px 31px 10px 20px;
+    font-size: 13px;
+  }
+
+.reset-input {
+    border: none;
+    background: none;
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translate(0, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    opacity: 0;
+    transition: all 100ms ease-in;
+    &.active {
+        right: 10px;
+        opacity: 1;
+    }
+    svg {
+        width: 15px;
+        height: 15px;
+        path {
+            fill: #747474;
+        }
+    }
+}

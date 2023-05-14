@@ -1,0 +1,30 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    li {
+        background-color: #F3F3F3;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: background-color 200ms ease-in-out;
+        a {
+            font-size: 16px;
+            font-weight: 700;
+            height: 100%;
+            width: 100%;
+            line-height: 40px;
+            text-align: center;
+        }
+        &.selected {
+            background-color: #FE5F1E;
+            a {
+                color: #fff;
+            }
+        }
+    }
+}
